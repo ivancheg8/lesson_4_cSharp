@@ -17,7 +17,7 @@ int summa(int a)
     return (e);
 }
 Console.WriteLine("Введи число: ");
-int num =Convert.ToInt32(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Сумма чисел: " + summa(num));
 
 
@@ -35,14 +35,15 @@ void massiv()
 {
     Random rand = new Random();
     int a = rand.Next(1, 9);
-    int[] nums = new int[a];
+    int[] nums = new int[a]; //создание массива рандомной длины 1-8
 
-    for (int i = 0; i < a; i++)
-        nums[i] = rand.Next(1, 100);
+    for (int i = 0; i < a; i++) nums[i] = rand.Next(1, 100); //заполнение массива рандомными числами 1-99
 
     Console.Write("Массив длинной " + a + ": ");
     for (int j = 0; j < nums.Length; j++)
+    {
         if (j == nums.Length - 1) Console.Write(nums[j] + "."); //чтобы последний элемент завершался точкой. для красоты
         else Console.Write(nums[j] + ", ");
+    }
 }
 massiv();
