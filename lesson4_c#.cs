@@ -4,8 +4,8 @@
 452 -> 11
 82 -> 10
 9012 -> 12
- */
-/* 
+*/
+
 int summa(int a)
 {
     var b = Convert.ToString(a);
@@ -14,14 +14,13 @@ int summa(int a)
     {
         e = e + Convert.ToInt32(b[i].ToString());
     }
-
     return (e);
 }
-
 Console.WriteLine("Введи число: ");
 int num =Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Сумма чисел: " + summa(num));
- */
+
+
 
 
 
@@ -30,7 +29,7 @@ Console.WriteLine("Сумма чисел: " + summa(num));
 
 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 6, 1, 33 -> [6, 1, 33]
- */
+*/
 
 void massiv()
 {
