@@ -9,13 +9,13 @@
 double summa(double a)
 {
     string b = Convert.ToString(a);
-    double e = 0;
+    double c = 0;
     for (int i = 0; i < b.Length; i++)
     {
-        e = e + Convert.ToDouble(b[i].ToString()); //конвертация char в string, а потом в double, чтобы бралось число, а не код числа
-        //e = e + (Char.GetNumericValue(b, i)); //второй вариант, даёт сразу число
+        c = c + Convert.ToDouble(b[i].ToString()); //конвертация char в string, а потом в double, чтобы бралось число, а не код числа
+        //c = c + (Char.GetNumericValue(b, i)); //второй вариант, даёт сразу число
     }
-    return (e);
+    return (c);
 }
 Console.WriteLine("Введи число: ");
 double num = Convert.ToDouble(Console.ReadLine());
